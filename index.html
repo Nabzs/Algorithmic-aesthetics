@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <link rel="shortcut icon" href="./imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <title>Color Concepts</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" title="Retour à l'accueil du site">
+          <img
+            src="./imgs/logo.png"
+            alt="Retour à l'accueil du site"
+            id="logo"
+          />
+        </a>
+        <h1>Color Concept</h1>
+        <ul>
+          <li><a >Accueil</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="buttons">
+      <button id="acid-button">Acid</button>
+      <button id="noisy-button">Noisy</button>
+      <button id="cold-button">Cold</button>
+    </div>
+    <div id="color-picker-container">
+      <input type="color" alt="Pipette" title="Pipette" id="color-picker" />
+      <img src="./imgs/icon.png" alt="">
+
+    </div>
+    
+
+    <div id="scroll-container">
+      <div id="canvas-wrapper"></div>
+    </div>
+
+    <div id="text">
+      <h2>Choix de couleurs</h2>
+    
+      <p>
+        <b>Acid :</b> Une palette néon et fluorescente qui incarne l'énergie, la modernité et l'audace. Parfaite pour des designs dynamiques et captivants.
+      </p>
+      <p>
+        <b>Noisy :</b> Des couleurs vives et contrastées reflétant l'intensité et la créativité désordonnée. Idéal pour des designs expressifs et uniques.
+      </p>
+      <p>
+        <b>Cold :</b> Teintes glacées et apaisantes inspirées des paysages hivernaux. Convient aux thèmes minimalistes, naturels et relaxants.
+      </p>
+    </div>
+    
+
+    <footer>
+      <p>© 2025 Color Concepts</p>
+    </footer>
+
+    <script src="sketch.js"></script>
+  </body>
+</html>
