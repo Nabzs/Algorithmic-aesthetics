@@ -21,22 +21,22 @@ let concepts = {
   
   
   noisy: [
-    // Rouge vif et ardent
-    "#990000", "#CC0000", "#FF0000", "#FF3300", "#FF4500", "#FF5733", "#FF6600", "#FF7F50", "#FF9933", "#FFB347",
-    // Jaune éclatant et saturé
-    "#FFD700", "#FFFF00", "#FFFF33", "#FFFF66", "#FFEB3B", "#FFF176", "#FFEE58", "#FFF59D", "#FFFACD", "#FEFEA8",
-    // Orange ardent
-    "#FFA500", "#FF8C00", "#FF7043", "#FF5722", "#FF4500", "#E65100", "#FB8C00", "#F57C00", "#EF6C00", "#FF9800",
-    // Violet électrique
-    "#9400D3", "#9932CC", "#BA55D3", "#8A2BE2", "#A020F0", "#9370DB", "#DDA0DD", "#EE82EE", "#DA70D6", "#FF00FF",
-    // Bleu saturé et contrasté
-    "#0000FF", "#1E90FF", "#4169E1", "#4682B4", "#5F9EA0", "#6495ED", "#7B68EE", "#6A5ACD", "#483D8B", "#4B0082",
-    // Neon et saturation visuelle
-    "#00CED1", "#40E0D0", "#48D1CC", "#20B2AA", "#008080", "#00FFFF", "#00BFFF", "#1E90FF", "#5F9EA0", "#4682B4",
-    // Contrast sombre pour équilibre
-    "#2C2C2C", "#3C3C3C", "#4C4C4C", "#5C5C5C", "#333333", "#000000", "#292B2C", "#2E3B4E", "#1C2833", "#17202A",
-    // Accents supplémentaires pour l'intensité
-    "#FF69B4", "#FF1493", "#DB7093", "#FF6EB4", "#FF69B4", "#FF7F50", "#F08080", "#FF4500", "#FF6347", "#CD5C5C",
+    // Éclats lumineux (glitchs colorés)
+    "#FF0033", "#FF0066", "#FF00CC", "#FF3399", "#FF66FF", "#FF33CC", "#FF0099", "#CC33FF", "#CC00FF", "#9900FF",
+    // Gris métalliques et bruit visuel
+    "#2E2E2E", "#3B3B3B", "#484848", "#5A5A5A", "#707070", "#858585", "#9B9B9B", "#B0B0B0", "#C6C6C6", "#DCDCDC",
+    // Blancs cassés et perturbés
+    "#F5F5F5", "#FAFAFA", "#FFFFFF", "#E8E8E8", "#EEEEEE", "#F2F2F2", "#FCFCFC", "#FBFBFB", "#F7F7F7", "#EDEDED",
+    // Bleus glitch et statiques
+    "#0033CC", "#0055FF", "#007FFF", "#3399FF", "#6699FF", "#99CCFF", "#ADD8E6", "#87CEEB", "#4682B4", "#1E90FF",
+    // Accents verts électriques
+    "#00FF33", "#00FF66", "#33FF99", "#66FFCC", "#99FFCC", "#00CC99", "#009966", "#006633", "#003322", "#33FF66",
+    // Rouge intense et vibrations
+    "#660000", "#8B0000", "#B22222", "#DC143C", "#FF4500", "#FF6347", "#FF7F50", "#FF5733", "#FF9999", "#FFCCCB",
+    // Couleurs bruitées (inspiration glitch art)
+    "#6B6B6B", "#5E5E5E", "#4F4F4F", "#A9A9A9", "#D3D3D3", "#8A8A8A", "#696969", "#767676", "#D0D0D0", "#C0C0C0",
+    // Teintes sombres pour contraste
+    "#1C1C1C", "#2C2C2C", "#3C3C3C", "#4C4C4C", "#000000", "#1A1A1A", "#121212", "#0A0A0A", "#050505", "#010101",
   ],
   
 
