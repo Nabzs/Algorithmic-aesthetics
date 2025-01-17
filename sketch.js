@@ -1,54 +1,76 @@
 
 let concepts = {
-  acid : [
-    "#F6FF8F", "#FF6E61", "#81DFA0", "#B2F5CF", "#FFCC00", "#FF9900", "#FF3399",
-    "#CCFF00", "#66FF66", "#33CCCC", "#FF33FF", "#CC99FF", "#CC33FF", "#FF6666",
-    "#FFFF33", "#FF9966", "#CCFF66", "#99FF33", "#CC9933", "#FF9933", "#FF6600",
-    "#CC3300", "#FF3300", "#CC0066", "#FF33CC", "#CC33CC", "#9933CC", "#9933FF",
-    "#9900FF", "#9900CC", "#990099", "#993399", "#CC0099", "#CC33FF", "#FF33FF",
-    "#FF66CC", "#FF6699", "#FF9966", "#CC6600", "#996600", "#993300", "#FFCC33",
-    "#FFFF66", "#CCFF99", "#99FF66", "#66FF33", "#33FF00", "#00FF33", "#33FF66",
-    "#66FF99", "#99FFCC", "#CCFFFF", "#99CCFF", "#6699FF", "#3366FF", "#0033FF",
-    "#0000FF", "#3300FF", "#6600FF", "#9933FF", "#CC33FF", "#FF00FF", "#FF33CC",
-    "#FF66CC", "#FF99CC", "#FFCCCC", "#CC9999", "#996666", "#663333", "#330000",
-    "#660000", "#993300", "#CC6600", "#FF9900", "#FFCC33", "#FFFF00", "#CCFF00",  
-    "#99FF00", "#66FF00", "#33FF33", "#00FF66", "#33FF99", "#66FFCC", "#99FFFF",
-    "#CCFFFF", "#99CCFF", "#6699CC", "#3366CC", "#0033CC", "#0000CC", "#000099",
-    "#000066", "#003399", "#336699", "#6699FF", "#9999FF", "#CC99FF", "#FF99FF",
-    "#FF66FF", "#FF33FF", "#FF00CC", "#FF0099", "#FF0066", "#FF0033", "#FF3300",
-    "#FF6600", "#FF9900", "#FFCC00", "#FFFF00", "#CCFF00", "#99FF33", "#66FF66",
-    "#33FF99", "#00FFCC", "#33FFFF", "#66FFFF", "#99FFFF", "#CCFFFF", "#CCFFCC",
-    "#99FF99", "#66FF66", "#33FF33", "#00FF00", "#33FF33", "#66FF66", "#99FF99",
-    "#CCFF99", "#FFFF99", "#FFFFCC", "#FFFF99", "#CCFF66", "#99FF33", "#66FF00",
-    "#33FF00",
-  ],  
-  noisy: [
-    "#990000","#CC0000","#FF0000","#FF3300","#FF6600","#FF9933","#FFCC00","#FFFF33","#FFFF66","#FFFF99","#FFFFCC","#FEFEFE","#FFCCCC","#FF9999","#FF6666","#FF3333","#FF0000","#CC0000","#990000","#660000",
-    "#330000","#660033","#993366","#CC3366","#FF3366","#FF6699","#FF99CC","#FFCCFF","#FF99FF","#FF66FF","#FF33FF","#FF00FF","#CC00CC","#990099","#660066","#330033","#660066","#993399","#CC33CC","#FF33CC",
-    "#FF66CC","#FF99CC","#FFCCCC","#CC99CC","#996699","#663366","#330066","#6600CC","#9933FF","#CC66FF","#CC99FF","#CCCCFF","#99CCFF","#6699FF","#3366FF","#0033FF","#0000FF","#0000CC","#000099","#000066",
-    "#003399","#336699","#6699CC","#99CCCC","#CCFFFF","#99FFFF","#66FFFF","#33FFFF","#00FFFF","#00CCCC","#009999","#006666","#003333","#003366","#006699","#0099CC","#00CCFF","#33CCFF","#66CCFF","#99CCFF",
-    "#CCCCFF","#CC99FF","#9966FF","#9933FF","#9900FF","#6600FF","#3300FF","#0033CC","#0033FF","#0033FF","#3366FF","#6699FF","#99CCFF","#CCFFFF","#99FFFF","#66FFFF","#33FFFF","#00FFFF","#00CCCC","#0099CC",
-    "#0066CC","#0033CC","#0000CC","#000099","#000066","#003399","#336699","#6699CC","#99CCCC","#CCFFFF","#99FFFF","#66FFFF","#33FFFF","#00FFFF","#00CCCC","#009999","#006666","#003333","#000000","#333333",
+  acid: [
+    // Verts fluorescents (dominance acide)
+    "#00FF00", "#32FF32", "#64FF64", "#96FF96", "#C8FFC8", "#AFFF00", "#80FF00", "#4FFF4F", "#00FF7F", "#00FF4F",
+    // Jaunes éclatants
+    "#FFFF00", "#FFF000", "#FFE600", "#FFDD00", "#FFCC00", "#FFD500", "#FFE700", "#FFF933", "#FFF380", "#FFFFB3",
+    // Roses saturés et toxiques
+    "#FF007F", "#FF3399", "#FF66B3", "#FF99CC", "#FF00CC", "#FF33FF", "#FF66FF", "#FF99FF", "#FF00B3", "#FF339C",
+    // Néons vibrants (cyan et bleus électriques)
+    "#00FFFF", "#33FFFF", "#66FFFF", "#99FFFF", "#66CCFF", "#3399FF", "#0066FF", "#0033FF", "#00BFFF", "#00A3CC",
+    // Teintes toxiques supplémentaires
+    "#A0FFA0", "#B5FF4F", "#D9FF33", "#EEFF00", "#FFFF33", "#FFF780", "#E6FF7F", "#CCFF66", "#B3FF33", "#A6FF4D",
+    // Accents psychédéliques
+    "#FF007F", "#FF1AB3", "#FF3366", "#FF6699", "#FF339C", "#CC00FF", "#CC33FF", "#B200CC", "#9900FF", "#8000CC",
+    // Contraste sombre et acide
+    "#660033", "#99004D", "#B30066", "#CC007F", "#4CFF99", "#33FFCC", "#00FFFF", "#4D99FF", "#3333FF", "#001AFF",
+    // Bases sombres pour profondeur
+    "#0F0F0F", "#1F1F1F", "#2F2F2F", "#3F3F3F", "#4F4F4F", "#5F5F5F",
   ],
+  
+  
+  noisy: [
+    // Rouge vif et ardent
+    "#990000", "#CC0000", "#FF0000", "#FF3300", "#FF4500", "#FF5733", "#FF6600", "#FF7F50", "#FF9933", "#FFB347",
+    // Jaune éclatant et saturé
+    "#FFD700", "#FFFF00", "#FFFF33", "#FFFF66", "#FFEB3B", "#FFF176", "#FFEE58", "#FFF59D", "#FFFACD", "#FEFEA8",
+    // Orange ardent
+    "#FFA500", "#FF8C00", "#FF7043", "#FF5722", "#FF4500", "#E65100", "#FB8C00", "#F57C00", "#EF6C00", "#FF9800",
+    // Violet électrique
+    "#9400D3", "#9932CC", "#BA55D3", "#8A2BE2", "#A020F0", "#9370DB", "#DDA0DD", "#EE82EE", "#DA70D6", "#FF00FF",
+    // Bleu saturé et contrasté
+    "#0000FF", "#1E90FF", "#4169E1", "#4682B4", "#5F9EA0", "#6495ED", "#7B68EE", "#6A5ACD", "#483D8B", "#4B0082",
+    // Neon et saturation visuelle
+    "#00CED1", "#40E0D0", "#48D1CC", "#20B2AA", "#008080", "#00FFFF", "#00BFFF", "#1E90FF", "#5F9EA0", "#4682B4",
+    // Contrast sombre pour équilibre
+    "#2C2C2C", "#3C3C3C", "#4C4C4C", "#5C5C5C", "#333333", "#000000", "#292B2C", "#2E3B4E", "#1C2833", "#17202A",
+    // Accents supplémentaires pour l'intensité
+    "#FF69B4", "#FF1493", "#DB7093", "#FF6EB4", "#FF69B4", "#FF7F50", "#F08080", "#FF4500", "#FF6347", "#CD5C5C",
+  ],
+  
 
-    cold: [
-      "#013220","#014421","#1B3D33","#2A4F3C","#365A41","#40664C","#507B59","#618D69","#7CA285","#92B297","#2C4C3B","#375C46","#446B51","#4E7C5D","#5D8D6B","#6C9E7A","#7CAF88","#8DBF96","#A0CFAC","#B2DFC3",
-      // Terre hivernale (bruns et gris doux)
-      "#4A2C2A","#5C3B2E","#6E4A37","#806152","#9B816A","#B0968C","#D1B6A1","#CABEB3","#DED5CA","#EEE4D8","#573A2F","#674734","#775A40","#8B6E50","#A08068","#B49280","#C7A79A","#D8BCB2","#E7D1C8","#F2E6DE",
-      // Glace et neige (gris froids et blancs cassés)
-      "#F5F5F5","#F0F0F0","#EAEAEA","#E4E4E4","#DCDCDC","#BFC4C9","#A5ACB1","#8A9399","#6F787E","#555E65","#3E464D","#2A2F35","#1C1E23","#4C5A62","#5D6A74","#73828E","#8D9BA8","#A7B6C3","#C3D0D6","#E0EBF0",
-      // Ciel froid (bleus glacés et nuances)
-      "#3C4F67","#41556F","#4D6381","#5A7495","#6787AB","#7A9FC1","#91B4D4","#A9C8E3","#C2D8EF","#D6E7F9","#314455","#3A5162","#455E71","#526C82","#627B93","#758DAB","#8BA0C2","#A1B3D5","#B7C7E6","#CEDBF3",
-      // Montagnes enneigées (gris bleutés et bleus foncés)
-      "#1B263B","#2C3E50","#34495E","#3B566A","#496D80","#4F7B8E","#568EA4","#609FB5","#79BBD6","#99D3ED","#21303E","#2D4051","#394E63","#475C75","#546B86","#67829C","#7D97B0","#94ADC3","#ABC3D4","#C2D8E3",
-      // Ombres et nuit (gris foncés et noirs bleutés)
-      "#1C1C1C","#2C2C2C","#3C3C3C","#4C4C4C","#5C5C5C","#2A3136","#3B444B","#4A545C","#58656D","#66757D","#354149","#455159","#55606A","#64707A","#738089","#829099","#91A0AA","#A0B0BB","#C2D2DA","#E2F2F6",
-      // Coucher de soleil hivernal (rouges et bruns glacés)
-      "#D88A8A","#C57F7F","#B56D6D","#A65B5B","#964545","#804040","#6A3636","#4F2A2A","#3C2222","#2A1818","#E0A3A3","#D28F8F","#C47C7C","#B56868","#A45252","#8E4848","#7A3E3E","#633232","#4E2626","#381C1C",
-      // Forêt enneigée (verts moyens et bleus froids)
-      "#344E41","#436154","#5A7767","#729B84","#92B6A5","#A6CAC3","#BFE4DF","#D3ECEA","#E8F5F3","#F2FAF9","#3F5D4A","#507363","#61897C","#7B9F95","#96B7AE","#AFD0C9","#C7E8E1","#DCF3F0","#EEF9F7","#F8FDFC",
-      "#003366", "#006699", "#0099CC", "#66CCCC", "#3399CC", "#0066CC", "#0033CC", "#6699FF", "#3366CC", "#66CCFF","#99CCFFAA", "#CCFFFFAA", "#99CCFFAA", "#CCCCFFAA", "#336699AA", "#003399", "#0066FF", "#3366FF", "#0033FF", "#0033CCAA",
-    ],
+  cold: [
+    // Forêts froides et ombres
+    "#013220", "#014421", "#1B3D33", "#2A4F3C", "#365A41", "#40664C", "#507B59", "#618D69", "#2C4C3B", "#375C46", 
+    "#446B51", "#4E7C5D", "#5D8D6B", "#6C9E7A", "#7CAF88", "#8DBF96", "#A0CFAC", "#92B297", "#7CA285", "#B2DFC3",
+    // Terre hivernale (bruns et gris doux)
+    "#4A2C2A", "#5C3B2E", "#6E4A37", "#806152", "#9B816A", "#B0968C", "#D1B6A1", "#CABEB3", "#DED5CA", "#EEE4D8",
+    "#573A2F", "#674734", "#775A40", "#8B6E50", "#A08068", "#B49280", "#C7A79A", "#D8BCB2", "#E7D1C8", "#F2E6DE",
+    // Glace et neige (gris froids et blancs cassés)
+    "#F5F5F5", "#EAEAEA", "#DCDCDC", "#BFC4C9", "#A5ACB1", "#8A9399", "#6F787E", "#555E65", "#3E464D", "#2A2F35", 
+    "#1C1E23", "#4C5A62", "#5D6A74", "#73828E", "#8D9BA8", "#A7B6C3", "#C3D0D6", "#E0EBF0", "#F0F0F0", "#E4E4E4",
+    // Ciel froid (bleus glacés et nuances)
+    "#3C4F67", "#41556F", "#4D6381", "#5A7495", "#6787AB", "#7A9FC1", "#91B4D4", "#A9C8E3", "#C2D8EF", "#D6E7F9",
+    "#314455", "#3A5162", "#455E71", "#526C82", "#627B93", "#758DAB", "#8BA0C2", "#A1B3D5", "#B7C7E6", "#CEDBF3",
+    // Montagnes enneigées (gris bleutés et bleus foncés)
+    "#1B263B", "#2C3E50", "#34495E", "#3B566A", "#496D80", "#4F7B8E", "#568EA4", "#609FB5", "#79BBD6", "#99D3ED",
+    "#21303E", "#2D4051", "#394E63", "#475C75", "#546B86", "#67829C", "#7D97B0", "#94ADC3", "#ABC3D4", "#C2D8E3",
+    // Ombres et nuit (gris foncés et noirs bleutés)
+    "#1C1C1C", "#2C2C2C", "#3C3C3C", "#4C4C4C", "#5C5C5C", "#2A3136", "#3B444B", "#4A545C", "#58656D", "#66757D", 
+    "#354149", "#455159", "#55606A", "#64707A", "#738089", "#829099", "#91A0AA", "#A0B0BB", "#C2D2DA", "#E2F2F6",
+    // Coucher de soleil hivernal (rouges et bruns glacés)
+    "#D88A8A", "#C57F7F", "#B56D6D", "#A65B5B", "#964545", "#804040", "#6A3636", "#4F2A2A", "#3C2222", "#2A1818",
+    "#E0A3A3", "#D28F8F", "#C47C7C", "#B56868", "#A45252", "#8E4848", "#7A3E3E", "#633232", "#4E2626", "#381C1C",
+    // Forêt enneigée (verts moyens et bleus froids)
+    "#344E41", "#436154", "#5A7767", "#729B84", "#92B6A5", "#A6CAC3", "#BFE4DF", "#D3ECEA", "#E8F5F3", "#F2FAF9", 
+    "#3F5D4A", "#507363", "#61897C", "#7B9F95", "#96B7AE", "#AFD0C9", "#C7E8E1", "#DCF3F0", "#EEF9F7", "#F8FDFC",
+    // Ombres et glacis supplémentaires (bleus et gris profonds)
+    "#001F3F", "#003366", "#003F7F", "#004F9F", "#005FBF", "#336699", "#6699CC", "#003399", "#3366FF", "#0033FF", 
+    "#66CCFF", "#99CCFFAA", "#CCFFFFAA", "#0033CC", "#0033CCAA",
+  ],
+  
+  
 };
 
 let currentConcept = "acid";
