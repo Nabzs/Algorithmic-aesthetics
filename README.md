@@ -104,7 +104,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For questions or suggestions, feel free to contact:
 - **Name**: Nabil Boukhorissa
 - **Email**: boukhorissa.nabil@gmail.com
-- **GitHub**: [[https://github.com/Nabzs](https://github.com/Nabzs/Algorithmic_esthetics)
+- **GitHub**: [[https://github.com/Username](https://github.com/Nabzs/Algorithmic_esthetics)
 - 
 
 ---
@@ -112,7 +112,7 @@ For questions or suggestions, feel free to contact:
 ## Images
 
 ### Acid Color Sets
-![Dynamic Color Sets](./Exports/Acid/acid (1).png)
+![Dynamic Color Sets](../Exports/Acid/acid (1).png)
 
 ### Noisy Color Sets
 ![Dynamic Color Sets](./Exports/Noisy/noisy (13).png)
