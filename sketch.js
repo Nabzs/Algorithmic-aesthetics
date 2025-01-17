@@ -67,16 +67,12 @@ function setup() {
   noLoop();
   generateFixedSets();
 
-  // Boutons pour changer de concept
   select("#acid-button").mousePressed(() => updateConcept("acid"));
   select("#noisy-button").mousePressed(() => updateConcept("noisy"));
   select("#cold-button").mousePressed(() => updateConcept("cold"));
 
-  // Bouton pour régénérer
-  // Création du bouton avec l'icône
   let regenerateButton = createButton("");
 
-  // Ajouter l'icône et le texte au bouton
   regenerateButton.html(`
     <div style="display: flex; align-items: center; gap: 8px;">
       <img id="refresh-icon" src="./imgs/refresh.svg" alt="Générer" title="Générer de nouvelles palettes" style="width: 30px; height: 30px;">
@@ -84,11 +80,10 @@ function setup() {
     </div>
   `);
   
-  // Appliquer les styles au bouton
   regenerateButton.style("position", "absolute");
   regenerateButton.style("border", "none");
-  regenerateButton.style("background", "linear-gradient(135deg, #4CAF50, #2E7D32)"); // Dégradé moderne
-  regenerateButton.style("color", "#fff"); // Texte blanc pour contraster avec le fond
+  regenerateButton.style("background", "rgba(220, 20, 60, 80%)"); 
+  regenerateButton.style("color", "#fff"); 
   regenerateButton.style("font-size", "16px");
   regenerateButton.style("font-weight", "bold");
   regenerateButton.style("display", "flex");
@@ -96,33 +91,31 @@ function setup() {
   regenerateButton.style("align-items", "center");
   regenerateButton.style("cursor", "pointer");
   regenerateButton.style("transform", "translate(-50%, -50%)");
-  regenerateButton.style("left", "83%");
+  regenerateButton.style("left", "84%");
   regenerateButton.style("top", "17.6%");
   regenerateButton.style("width", "160px");
   regenerateButton.style("height", "60px");
-  regenerateButton.style("border-radius", "12px"); // Bordures arrondies
-  regenerateButton.style("box-shadow", "0 4px 10px rgba(0, 0, 0, 0.25)"); // Ombre élégante
+  regenerateButton.style("border-radius", "12px");
+  regenerateButton.style("box-shadow", "0 4px 10px rgba(0, 0, 0, 0.25)"); 
   regenerateButton.style("transition", "transform 0.2s, background 0.3s, box-shadow 0.3s");
   
-  // Effets au survol
   regenerateButton.mouseOver(() => {
-    regenerateButton.style("background", "linear-gradient(135deg, #66BB6A, #388E3C)"); // Dégradé plus clair
-    regenerateButton.style("box-shadow", "0 6px 14px rgba(0, 0, 0, 0.35)"); // Ombre amplifiée
+    regenerateButton.style("background", "rgb(220, 20, 60,95%)"); 
+    regenerateButton.style("box-shadow", "0 6px 14px rgba(0, 0, 0, 0.35)"); 
   });
   
   regenerateButton.mouseOut(() => {
-    regenerateButton.style("background", "linear-gradient(135deg, #4CAF50, #2E7D32)"); // Retour au style initial
-    regenerateButton.style("box-shadow", "0 4px 10px rgba(0, 0, 0, 0.25)"); // Retour à l'ombre initiale
+  regenerateButton.style("background", "rgb(220, 20, 60,95%)");
+    regenerateButton.style("box-shadow", "0 4px 10px rgba(0, 0, 0, 0.25)");
   });
   
-  // Associer l'animation et les actions au clic
   regenerateButton.mousePressed(() => {
     const icon = document.getElementById("refresh-icon");
     icon.classList.add("rotate-animation");
   
     setTimeout(() => {
       icon.classList.remove("rotate-animation");
-    }, 1000); // Durée de l'animation en millisecondes
+    }, 1000); 
   
     generateFixedSets();
     redraw();
@@ -133,7 +126,6 @@ function setup() {
   // Bouton pour exporter
   let exportButton = createButton("");
 
-  // Ajouter l'icône et le texte au bouton
   exportButton.html(`
     <div style="display: flex; align-items: center; gap: 8px;">
       <img src="./imgs/export.svg" alt="Export" style="width: 40px; height: 40px;">
@@ -141,9 +133,8 @@ function setup() {
     </div>
   `);
   
-  // Appliquer le style au bouton
   exportButton.style("position", "absolute");
-  exportButton.style("background", "rgba(2, 23, 97, 0.9)"); // Couleur de fond par défaut
+  exportButton.style("background", "rgba(2, 23, 97, 0.9)"); 
   exportButton.style("padding", "12px 24px");
   exportButton.style("border", "none");
   exportButton.style("border-radius", "10px");
@@ -153,24 +144,22 @@ function setup() {
   exportButton.style("align-items", "center");
   exportButton.style("width", "160px");
   exportButton.style("height", "60px");
-  exportButton.style("transition", "all 0.3s ease"); // Transition fluide pour hover
+  exportButton.style("transition", "all 0.3s ease"); 
   exportButton.style("transform", "translate(-50%, -50%)");
   exportButton.style("left", "94%");
   exportButton.style("top", "17.7%");
   exportButton.style("font-size", "30px");
   
-  // Styles de hover
   exportButton.mouseOver(() => {
-    exportButton.style("background", "rgba(25, 118, 210, 0.9)"); // Couleur de fond plus claire
-    exportButton.style("box-shadow", "0 6px 14px rgba(25, 118, 210, 0.35)"); // Ombre amplifiée
+    exportButton.style("background", "rgba(25, 118, 210, 0.9)"); 
+    exportButton.style("box-shadow", "0 6px 14px rgba(25, 118, 210, 0.35)"); 
   });
   
   exportButton.mouseOut(() => {
-    exportButton.style("background", "rgba(2, 23, 97, 0.9)"); // Retour au style initial
-    exportButton.style("box-shadow", "0 4px 10px rgba(0, 0, 0, 0.25)"); // Retour à l'ombre initiale
+    exportButton.style("background", "rgba(2, 23, 97, 0.9)"); 
+    exportButton.style("box-shadow", "0 4px 10px rgba(0, 0, 0, 0.25)"); 
   });
   
-  // Associer la fonction d'exportation
   exportButton.mousePressed(exportAllSetsAsZip);
   
 
@@ -241,7 +230,7 @@ function drawHomageToTheSquare(canvas, x, y, colors, size) {
     canvas.fill(colors[i - 1]);
 
     if (i === 4) {
-      canvas.rect(0, 0, i * (size / 4), i * (size / 4), 6); // Radius
+      canvas.rect(0, 0, i * (size / 4), i * (size / 4), 6); 
     } else {
       canvas.rect(0, 0, i * (size / 4), i * (size / 4));
     }
