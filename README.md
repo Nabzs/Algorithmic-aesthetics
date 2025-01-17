@@ -42,8 +42,8 @@ Ensure you have the following installed:
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/color-concept-generator.git
-   cd color-concept-generator
+   git clone https://github.com/Nabzs/Algorithmic_esthetics.git
+   cd Algorithmic_esthetics
    ```
 2. Open `index.html` in your browser to launch the project.
 
@@ -104,21 +104,23 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For questions or suggestions, feel free to contact:
 - **Name**: Nabil Boukhorissa
 - **Email**: boukhorissa.nabil@gmail.com
-- **GitHub**: [[https://github.com/Username](https://github.com/Nabzs/Algorithmic_esthetics)
-- 
+- **GitHub**: [https://github.com/Nabzs/Algorithmic_esthetics](https://github.com/Nabzs/Algorithmic_esthetics)
 
 ---
 
 ## Images
 
 ### Acid Color Sets
-![Dynamic Color Sets](../Exports/Acid/acid (1).png)
+![Acid Color Set 1](./Exports/Acid/acid%20(1).png)
+![Acid Color Set 2](./Exports/Acid/acid%20(2).png)
 
 ### Noisy Color Sets
-![Dynamic Color Sets](./Exports/Noisy/noisy (13).png)
+![Noisy Color Set 1](./Exports/Noisy/noisy%20(1).png)
+![Noisy Color Set 2](./Exports/Noisy/noisy%20(2).png)
 
 ### Cold Color Sets
-![Dynamic Color Sets](./Exports/Cold/cold (7).png)
+![Cold Color Set 1](./Exports/Cold/cold%20(1).png)
+![Cold Color Set 2](./Exports/Cold/cold%20(2).png)
 
 ---
 
