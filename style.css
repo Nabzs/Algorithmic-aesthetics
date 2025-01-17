@@ -74,18 +74,45 @@ header nav ul li {
   border: none;
   color: #0f0f0f;
   background-color: #ffffff;
-  border: 0.1px solid #000;
 
 }
 
-#buttons #acid-button:hover {transform: scale(1.1);}
-#buttons #noisy-button:hover {transform: scale(1.1);}
-#buttons #cold-button:hover {transform: scale(1.1);}
+#buttons #acid-button {
+  background-color: rgba(5, 155, 62, 0.6);
+  color: #ffffff; 
+}
 
-/* Scroll Container */
+#buttons #acid-button:hover {
+  transform: scale(1.1); 
+  background-color: rgba(5, 155, 62, 0.8);
+  color: #ffffff; 
+}
+
+#buttons #noisy-button {
+  background-color: rgba(33, 32, 32, 0.85);
+  color: #ffffff;
+}
+
+#buttons #noisy-button:hover {
+  transform: scale(1.1); 
+  background-color: rgba(33, 32, 32, 1);
+  color: #ffffff; 
+}
+
+#buttons #cold-button {
+  background-color: rgba(2, 23, 97, 0.8);
+  color: #ffffff; 
+
+}
+
+#buttons #cold-button:hover {
+  transform: scale(1.1); 
+  background-color: rgba(2, 23, 97, 1); 
+}
+
 #scroll-container {
   width: 100vw;
-  height: calc(100vh - 100px); /* Exclude header height */
+  height: calc(100vh - 100px); 
   display: flex;
   overflow-x: auto;
   background-color: #f8f9fa;
@@ -196,7 +223,7 @@ button {
 /* Active Concept Button */
 #buttons #cold-button.active-concept {
   font-size: 1.4rem;
-  background-color:   rgba(2, 23, 97, 0.6);
+  background-color:   rgba(2, 23, 97, 0.8);
   color: #ffffff;
   cursor: pointer;
   border: none;
